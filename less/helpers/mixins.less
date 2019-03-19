@@ -1,0 +1,15 @@
+.media-screen-touch(@ruleset) {
+    @media (min-width: @screen-touch) and (max-width: @screen-tablet - 1px) {
+        @ruleset();
+    }
+}
+.media-screen-tablet(@ruleset) {
+    @media (min-width: @screen-tablet) and (max-width: @screen-desktop - 1px) {
+        @ruleset();
+    }
+}
+.media-screen-desktop(@ruleset) {
+    @media (min-width: @screen-desktop) {
+        @ruleset();
+    }
+}

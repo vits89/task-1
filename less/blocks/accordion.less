@@ -1,0 +1,54 @@
+.accordion {
+    &__section {
+        border-top: 1px solid #D2D9E2;
+    }
+    &__header {
+        color: @color-primary;
+        padding: 14px 0;
+        position: relative;
+
+        &:hover {
+            color: #000000;
+            cursor: pointer;
+
+            a {
+                color: #000000;
+            }
+        }
+
+        &::after {
+            content: "\002B";
+            font-size: 32px;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+            top: 8px;
+        }
+
+        &_active {
+            a {
+                color: #000000;
+            }
+
+            &::after {
+                color: #000000;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    &__content {
+        display: none;
+        margin-bottom: 20px;
+
+        .media-screen-tablet({
+            width: 385px;
+        });
+        .media-screen-desktop({
+            width: 520px;
+        });
+
+        &_showed {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.button {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+
+    &_primary {
+        background: @color-primary;
+        color: #FFFFFF;
+        padding: 13px 27px;
+
+        &:active {
+            background: @color-primary !important;
+            color: #FFFFFF !important;
+            opacity: @opacity;
+        }
+        &:hover {
+            background: #000000;
+            color: #FFFFFF;
+        }
+    }
+    &_secondary {
+        background: transparent;
+        border-color: rgba(31,64,111,0.20);
+        color: @color-primary;
+        padding: 5px 11px 9px;
+
+        &:active {
+            color: @color-primary !important;
+            opacity: @opacity;
+        }
+        &:hover {
+            color: #000000;
+        }
+    }
+
+    &_block {
+        display: block;
+        width: 100%;
+    }
+}

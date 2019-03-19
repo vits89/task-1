@@ -1,0 +1,54 @@
+.contacts {
+    list-style-type: none;
+
+    &__item {
+        display: inline-block;
+        margin-right: 16px;
+
+        .contacts &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        border-radius: 50%;
+        color: #FFFFFF;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        vertical-align: middle;
+        width: 48px;
+
+        &:active {
+            color: #FFFFFF !important;
+            opacity: @opacity;
+        }
+        &:hover {
+            color: #FFFFFF;
+        }
+
+        &_facebook {
+            background: #395A99;
+            font-size: 24px;
+
+            &:hover {
+                background: multiply(rgba(0, 0, 0, 0.2), #395A99);
+            }
+        }
+        &_twitter {
+            background: #51ADEF;
+            font-size: 18px;
+
+            &:hover {
+                background: multiply(rgba(0, 0, 0, 0.2), #51ADEF);
+            }
+        }
+        &_telegram {
+            background: #2CA5E0;
+            font-size: 23px;
+
+            &:hover {
+                background: multiply(rgba(0, 0, 0, 0.2), #2CA5E0);
+            }
+        }
+    }
+}

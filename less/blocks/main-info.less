@@ -1,0 +1,27 @@
+.main-info {
+    background: @background-color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+
+    &__inner {
+        text-align: center;
+    }
+    &__heading {
+        display: none;
+    }
+    &__user-photo {
+        margin: 0 auto 32px;
+
+        .media-screen-desktop({
+            margin-bottom: 36px;
+        });
+    }
+    &__content {
+        margin-bottom: 20px;
+    }
+    &__button {
+        width: 280px;
+    }
+}

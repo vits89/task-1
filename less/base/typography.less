@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800|PT+Mono|PT+Sans&subset=cyrillic');
+
+.h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    opacity: 1;
+
+    .media-screen-desktop({
+        font-size: 40px;
+        line-height: 44px;
+    });
+}
+.large-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+.typed-text-1 {
+    font-family: 'PT Mono', monospace;
+    font-size: 14px;
+    line-height: 20px;
+}
+.typed-text-2 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 1;
+}
+.user-input {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+a {
+    .large-text();
+
+    color: @color-primary;
+    text-decoration: none;
+
+    &:active {
+        color: @color-primary !important;
+        opacity: @opacity;
+    }
+    &:hover {
+        color: #000000;
+    }
+
+    &.on-dark-bg {
+        .typed-text-1();
+
+        color: @color-secondary;
+
+        &:active {
+            color: @color-secondary !important;
+        }
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+}
+p {
+    .typed-text-1();
+
+    opacity: @opacity;
+}
